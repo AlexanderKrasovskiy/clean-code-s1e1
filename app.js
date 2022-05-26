@@ -5,7 +5,7 @@
 //Solution: Add interactivity so the user can manage daily tasks.
 //Break things down into smaller steps and take each step at a time.
 
-
+let idCounter = 4;
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput=document.getElementById("new-task");//Add a new task.
@@ -34,9 +34,13 @@ var createNewTaskElement=function(taskString){
 
     label.innerText=taskString;
     label.className='task';
+    label.setAttribute('for', `task${idCounter}`);
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.id = `task${idCounter}`;
+    idCounter++;
+    
     editInput.type="text";
     editInput.className="task";
 
