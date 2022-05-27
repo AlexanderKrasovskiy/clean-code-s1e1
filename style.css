@@ -14,6 +14,7 @@
 
 .header__img {
   width: 100%;
+  margin-bottom: -3px;
 }
 
 .header__link {
@@ -32,6 +33,10 @@
   display: block;
   width: 500px;
   margin: 0 auto;
+}
+
+.section {
+  padding: 16px 0;
 }
 
 .add-task {
@@ -93,7 +98,8 @@
   margin: 0;
   font-size: 18px;
   line-height: 18px;
-  height: 21px;
+  box-sizing: border-box;
+  height: 20.6px;
   padding: 0 9px;
   border: 1px solid #ddd;
   background: #fff;
@@ -115,7 +121,7 @@
 /* Task list */
 .task {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 18.5px 0;
   border-bottom: 1px solid #eee;
   
   display: flex;
